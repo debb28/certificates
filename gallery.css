@@ -1,0 +1,168 @@
+.home{
+    display: flex;
+    background: url("img/banner.png")no-repeat center;
+    height: 101px;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.cer{
+    font-family: 'Ubuntu', 'Prompt', sans-serif;
+    background: gainsboro;
+}
+
+.modal-target {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .modal-target:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    opacity: 1 !important;
+    max-width: 1200px;
+  }
+  
+  /* Caption of Modal Image */
+  .modal-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 32px;
+  }
+  
+  /* Add Animation */
+  .modal-content, .modal-caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-atransform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .modal-close {
+    position: absolute;
+    left: 50px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .modal-close:hover,
+  .modal-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+
+@media(max-width: 1104px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+@media(max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+
+@media(max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .navbar .menu i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background:#111;
+        text-align: center;
+        padding: 80px;
+        transition: all 0.3s ease;
+
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2{
+        font-size: 75px;
+
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+}
+@media(max-width: 690px){
+    .max-width{
+        padding: 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+}
+@media(max-width: 500px){
+    .home .home-content .text-2{
+        font-size: 50px;
+
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+}
